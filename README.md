@@ -5,6 +5,25 @@ This is a lightweight implementation of the lightning:carousel component. This c
 ## Dev, Build and Test
 To install directly, click on [this package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000001qgp6)
 
+Otherwise, do the following:
+
+* clone or fork this repo
+````
+git clone https://github.com/adamSellers/Lightning-Community-Carousel.git
+````
+* Spin up a fresh scratch org
+````
+sfdx force:org:create -a carouselScratch
+````
+* Push that code!
+````
+sfdx force:source:push -u carouselScratch
+````
+* Revel in your new carousel goodness!
+````
+sfdx force:org:open -u carouselScratch
+````
+
 ## Resources
 Creates: 
 
