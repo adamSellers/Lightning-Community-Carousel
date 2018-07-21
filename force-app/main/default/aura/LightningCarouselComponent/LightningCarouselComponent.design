@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute name="numberOfImages" label="Number of Images" description="Enter the number of images to display from the custom object" />
+    <design:attribute name="scrollTime" label="Scroll time" description="Number of seconds on each image" />
+</design:component>

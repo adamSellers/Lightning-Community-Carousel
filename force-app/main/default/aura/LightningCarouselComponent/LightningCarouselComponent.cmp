@@ -1,0 +1,18 @@
+<aura:component controller="LightningCarouselController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="numberOfImages" type="String" default="3" />
+    <aura:attribute name="scrollTime" type="String" default="5" />
+    <aura:attribute name="images" type="Lightning_Carousel_Image__c[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+    
+    <!-- Markup goes here -->
+    <lightning:carousel disableAutoScroll="false" disableAutoRefresh="false" scrollDuration = "3">
+        <aura:iteration items="{!v.images}" var="image">
+            <lightning:carouselImage
+                                     src = "{!image.Image_URL__c}"
+                                     header = "{!image.Image_Heading__c}"
+                                     description = "{!image.Image_Description__c}"
+                                     href = "{!image.Image_Link__c}">
+            </lightning:carouselImage>
+        </aura:iteration>
+    </lightning:carousel>  
+</aura:component>
