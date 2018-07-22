@@ -3,7 +3,7 @@
 This is a lightweight implementation of the lightning:carousel component. This contains a custom object for you to store your image references in the carousel component. 
 
 ## Dev, Build and Test
-To install directly, click on [this package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000001qgp6)
+To install directly, click on [this package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000001uaAc)
 
 Otherwise, do the following:
 
